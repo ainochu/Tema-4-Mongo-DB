@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.ainochu.gestor_facturas.Main.V">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1370" height="723"/>
+    </constraints>
+    <properties>
+      <background color="-15394284"/>
+      <preferredSize width="560" height="514"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="ca186" binding="tabbedPane1" default-binding="true">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-1842203"/>
+          <enabled value="true"/>
+          <focusable value="true"/>
+          <font name="Franklin Gothic Medium Cond"/>
+          <preferredSize width="14" height="29"/>
+          <tabLayoutPolicy value="0"/>
+        </properties>
+        <border type="etched" title-justification="2" title-position="2"/>
+        <children>
+          <grid id="a642e" binding="jpClientes" layout-manager="FormLayout">
+            <rowspec value="center:58px:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:d:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:d:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:42px:noGrow"/>
+            <rowspec value="top:20dlu:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:40px:noGrow"/>
+            <rowspec value="top:24dlu:noGrow"/>
+            <rowspec value="top:44dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <colspec value="left:134px:noGrow"/>
+            <colspec value="fill:230px:noGrow"/>
+            <colspec value="fill:max(d;4px):noGrow"/>
+            <colspec value="fill:203px:noGrow"/>
+            <colspec value="fill:max(d;4px):noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:206px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:max(d;4px):noGrow"/>
+            <constraints>
+              <tabbedpane title="Cliente"/>
+            </constraints>
+            <properties>
+              <background color="-1842203"/>
+              <enabled value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="ccdc" class="javax.swing.JTextField" binding="tbApellidos">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <grid id="3c42b" layout-manager="FormLayout">
+                <rowspec value="center:d:grow"/>
+                <colspec value="fill:d:grow"/>
+                <constraints>
+                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1842203"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="343e7" class="com.toedter.calendar.JDateChooser" binding="dateNacimiento">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                  </component>
+                </children>
+              </grid>
+              <component id="e8211" class="javax.swing.JButton" binding="btGuardarC">
+                <constraints>
+                  <grid row="10" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <autoscrolls value="false"/>
+                  <background color="-5263439"/>
+                  <hideActionText value="false"/>
+                  <text value="Guardar"/>
+                </properties>
+              </component>
+              <component id="e5fbe" class="javax.swing.JButton" binding="btNuevoC">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <autoscrolls value="false"/>
+                  <background color="-5263439"/>
+                  <hideActionText value="false"/>
+                  <text value="Nuevo"/>
+                </properties>
+              </component>
+              <component id="73d4c" class="javax.swing.JButton" binding="btModificarC">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <autoscrolls value="false"/>
+                  <background color="-5263439"/>
+                  <hideActionText value="false"/>
+                  <text value="Modificar"/>
+                </properties>
+              </component>
+              <component id="fe436" class="javax.swing.JButton" binding="btBusquedaC">
+                <constraints>
+                  <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <autoscrolls value="false"/>
+                  <background color="-5263439"/>
+                  <hideActionText value="false"/>
+                  <text value="Busqueda Avanzada"/>
+                </properties>
+              </component>
+              <component id="3c0ac" class="javax.swing.JTextField" binding="tbNombre">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <toolTipText value="Nombre"/>
+                </properties>
+              </component>
+              <component id="35d5" class="javax.swing.JTextField" binding="textDomicilioC">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="717b" class="javax.swing.JButton" binding="btEliminarC">
+                <constraints>
+                  <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <autoscrolls value="false"/>
+                  <background color="-5263439"/>
+                  <hideActionText value="false"/>
+                  <text value="Eliminar"/>
+                </properties>
+              </component>
+              <grid id="7b254" binding="JPBusquedaC" layout-manager="FormLayout">
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:16dlu:noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <colspec value="fill:max(d;4px):noGrow"/>
+                <colspec value="left:4dlu:noGrow"/>
+                <colspec value="fill:d:grow"/>
+                <colspec value="left:4dlu:noGrow"/>
+                <colspec value="fill:76px:noGrow"/>
+                <constraints>
+                  <grid row="2" column="6" row-span="8" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1842203"/>
+                  <enabled value="true"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="a5156" class="javax.swing.JLabel" binding="lbTipoCliente">
+                    <constraints>
+                      <grid row="4" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties>
+                      <text value="Tipo Cliente:"/>
+                    </properties>
+                  </component>
+                  <component id="3b494" class="javax.swing.JComboBox" binding="cbBusquedaC">
+                    <constraints>
+                      <grid row="6" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="1ccb4" class="javax.swing.JButton" binding="btBusquedaAC">
+                    <constraints>
+                      <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Buscar"/>
+                    </properties>
+                  </component>
+                  <component id="c03df" class="javax.swing.JButton" binding="btLimpiarB">
+                    <constraints>
+                      <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties>
+                      <text value="Restablecer"/>
+                    </properties>
+                  </component>
+                  <component id="134f2" class="javax.swing.JTextField" binding="textidFactura">
+                    <constraints>
+                      <grid row="3" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="61ae6" class="javax.swing.JLabel" binding="lbNombreC">
+                    <constraints>
+                      <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties>
+                      <text value="Nombre cliente:"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="808db" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <font name="Franklin Gothic Demi Cond" size="18"/>
+                  <text value="Nombre Cliente:"/>
+                </properties>
+              </component>
+              <component id="9b197" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <font name="Franklin Gothic Demi Cond" size="18"/>
+                  <text value="Apellidos Cliente:"/>
+                </properties>
+              </component>
+              <component id="97ab6" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <font name="Franklin Gothic Demi Cond" size="18"/>
+                  <text value="Domicilio Cliente:"/>
+                </properties>
+              </component>
+              <component id="927c1" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <font name="Franklin Gothic Demi Cond" size="18"/>
+                  <text value="Tipo Cliente:"/>
+                </properties>
+              </component>
+              <component id="5f1a8" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <font name="Franklin Gothic Demi Cond" size="18"/>
+                  <text value="Fecha Nacimiento:"/>
+                </properties>
+              </component>
+              <grid id="5784e" layout-manager="FormLayout">
+                <rowspec value="center:d:grow"/>
+                <colspec value="fill:d:grow"/>
+                <constraints>
+                  <grid row="11" column="1" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-vert="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="fb320">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="54922" class="com.ainochu.gestor_facturas.bean.TableClientes" binding="tbClientes">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <component id="c2a6e" class="javax.swing.JButton" binding="btEliminarTipoCliente">
+                <constraints>
+                  <grid row="6" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Eliminar Cliente:"/>
+                </properties>
+              </component>
+              <component id="b8fbf" class="javax.swing.JComboBox" binding="cbTipoCliente">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+          <grid id="cb005" binding="jpArticulos" layout-manager="FormLayout">
+            <rowspec value="center:d:noGrow"/>
+            <rowspec value="top:96dlu:noGrow"/>
+            <colspec value="fill:d:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:max(d;4px):noGrow"/>
+            <constraints>
+              <tabbedpane title="Articulo"/>
+            </constraints>
+            <properties>
+              <background color="-1842203"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="9f53f" layout-manager="FormLayout">
+                <rowspec value="center:58px:noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:d:noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:d:noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:42px:noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:40px:noGrow"/>
+                <rowspec value="center:32px:noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="top:24dlu:noGrow"/>
+                <rowspec value="top:44dlu:noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <colspec value="fill:134px:noGrow"/>
+                <colspec value="fill:230px:noGrow"/>
+                <colspec value="fill:max(d;4px):noGrow"/>
+                <colspec value="fill:200px:noGrow"/>
+                <colspec value="fill:max(d;4px):noGrow"/>
+                <colspec value="left:4dlu:noGrow"/>
+                <colspec value="fill:206px:noGrow"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <background color="-1842203"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="8c445" class="javax.swing.JTextField" binding="textId_ProductoA">
+                    <constraints>
+                      <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="fa0e0" class="javax.swing.JTextField" binding="textPrecioA">
+                    <constraints>
+                      <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <grid id="f370c" layout-manager="FormLayout">
+                    <rowspec value="center:d:grow"/>
+                    <colspec value="fill:d:noGrow"/>
+                    <colspec value="left:3dlu:noGrow"/>
+                    <colspec value="fill:46px:noGrow"/>
+                    <constraints>
+                      <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1842203"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="7733c" class="javax.swing.JComboBox" binding="cbDescuento">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                          <forms/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                    </children>
+                  </grid>
+                  <component id="f362" class="javax.swing.JButton" binding="btGuardarA">
+                    <constraints>
+                      <grid row="11" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-5263439"/>
+                      <hideActionText value="true"/>
+                      <text value="Guardar"/>
+                    </properties>
+                  </component>
+                  <component id="1c888" class="javax.swing.JButton" binding="btNuevoA">
+                    <constraints>
+                      <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties>
+                      <background color="-5263439"/>
+                      <text value="Nuevo"/>
+                    </properties>
+                  </component>
+                  <component id="ae330" class="javax.swing.JButton" binding="btBusquedaA">
+                    <constraints>
+                      <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-vert="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-5263439"/>
+                      <text value="Busqueda Avanzada"/>
+                    </properties>
+                  </component>
+                  <component id="181b3" class="javax.swing.JTextField" binding="textNombreA">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="ccd36" class="javax.swing.JButton" binding="btModificarA">
+                    <constraints>
+                      <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties>
+                      <background color="-5263439"/>
+                      <text value="Modificar"/>
+                    </properties>
+                  </component>
+                  <grid id="4db62" layout-manager="FormLayout">
+                    <rowspec value="center:d:grow"/>
+                    <colspec value="fill:d:grow"/>
+                    <colspec value="left:4dlu:noGrow"/>
+                    <colspec value="fill:d:grow"/>
+                    <constraints>
+                      <grid row="12" column="1" row-span="4" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-vert="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="fd4ab">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                        </constraints>
+                        <properties>
+                          <background color="-9079435"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="88ed2" class="com.ainochu.gestor_facturas.bean.TableArticulos" binding="tbProductos">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <component id="fd30a" class="javax.swing.JButton" binding="btEliminarA">
+                    <constraints>
+                      <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-vert="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-5263439"/>
+                      <text value="Eliminar"/>
+                    </properties>
+                  </component>
+                  <grid id="38abf" binding="JPBusquedaA" layout-manager="FormLayout">
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:16dlu:noGrow"/>
+                    <rowspec value="center:d:noGrow"/>
+                    <rowspec value="top:4dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:4dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:4dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <colspec value="fill:max(d;4px):noGrow"/>
+                    <colspec value="left:4dlu:noGrow"/>
+                    <colspec value="fill:78px:grow"/>
+                    <colspec value="left:4dlu:noGrow"/>
+                    <colspec value="fill:96px:noGrow"/>
+                    <colspec value="left:4dlu:noGrow"/>
+                    <colspec value="fill:max(d;4px):noGrow"/>
+                    <constraints>
+                      <grid row="2" column="6" row-span="13" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-vert="false"/>
+                    </constraints>
+                    <properties>
+                      <autoscrolls value="false"/>
+                      <background color="-1842203"/>
+                      <enabled value="true"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="ec068" class="javax.swing.JTextField" binding="textBNombreA">
+                        <constraints>
+                          <grid row="2" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="5ca36" class="javax.swing.JLabel" binding="lbBPrecio">
+                        <constraints>
+                          <grid row="4" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <forms/>
+                        </constraints>
+                        <properties>
+                          <text value="Descuento:"/>
+                        </properties>
+                      </component>
+                      <component id="afc1f" class="javax.swing.JButton" binding="btBusquedaAA">
+                        <constraints>
+                          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Buscar"/>
+                        </properties>
+                      </component>
+                      <component id="33cd6" class="javax.swing.JLabel" binding="lbBNombreA">
+                        <constraints>
+                          <grid row="1" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <forms/>
+                        </constraints>
+                        <properties>
+                          <text value="Nombre Articulo:"/>
+                        </properties>
+                      </component>
+                      <component id="17f52" class="javax.swing.JButton" binding="btLimpiarA">
+                        <constraints>
+                          <grid row="8" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                          <forms/>
+                        </constraints>
+                        <properties>
+                          <text value="Restablecer"/>
+                        </properties>
+                      </component>
+                      <component id="bea59" class="javax.swing.JTextField" binding="textBDptoA">
+                        <constraints>
+                          <grid row="6" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                    </children>
+                  </grid>
+                  <component id="3c48d" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Franklin Gothic Medium Cond" size="18"/>
+                      <text value="Nombre Articulo:"/>
+                    </properties>
+                  </component>
+                  <component id="2429b" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties>
+                      <enabled value="true"/>
+                      <font name="Franklin Gothic Medium Cond" size="18"/>
+                      <text value="Descrip Articulo:"/>
+                    </properties>
+                  </component>
+                  <component id="36859" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Franklin Gothic Medium Cond" size="18"/>
+                      <text value="Precio Articulo:"/>
+                    </properties>
+                  </component>
+                  <component id="380e2" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Franklin Gothic Demi Cond" size="18"/>
+                      <text value="Descuento/Cantidad:"/>
+                    </properties>
+                  </component>
+                  <component id="e4aa4" class="javax.swing.JButton" binding="btArticulosDescuento">
+                    <constraints>
+                      <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Articulos dto."/>
+                    </properties>
+                  </component>
+                  <component id="56cd" class="javax.swing.JButton" binding="btAplicarDto">
+                    <constraints>
+                      <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties>
+                      <text value="Aplicar dto."/>
+                    </properties>
+                  </component>
+                  <component id="e40c6" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Franklin Gothic Demi Cond" size="18"/>
+                      <text value="Seccion/Dto:"/>
+                    </properties>
+                  </component>
+                  <component id="7ae11" class="javax.swing.JButton" binding="btElegirDto">
+                    <constraints>
+                      <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties>
+                      <text value="Elegir Dto/s"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="c1a0f" binding="jpFacturas" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <tabbedpane title="Factura"/>
+            </constraints>
+            <properties>
+              <background color="-1842203"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="3bea4" layout-manager="FormLayout">
+                <rowspec value="center:58px:noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:d:noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:28px:noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:d:noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:42px:noGrow"/>
+                <rowspec value="top:21dlu:noGrow"/>
+                <rowspec value="top:18dlu:noGrow"/>
+                <rowspec value="top:24dlu:noGrow"/>
+                <rowspec value="top:17dlu:noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:4dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <colspec value="fill:134px:noGrow"/>
+                <colspec value="fill:230px:noGrow"/>
+                <colspec value="fill:96px:noGrow"/>
+                <colspec value="fill:203px:noGrow"/>
+                <colspec value="fill:max(d;4px):noGrow"/>
+                <colspec value="left:103dlu:noGrow"/>
+                <colspec value="left:23dlu:noGrow"/>
+                <colspec value="left:4dlu:noGrow"/>
+                <colspec value="fill:max(d;4px):noGrow"/>
+                <colspec value="left:4dlu:noGrow"/>
+                <colspec value="fill:max(d;4px):noGrow"/>
+                <constraints border-constraint="West"/>
+                <properties>
+                  <background color="-1842203"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="8705a" class="javax.swing.JButton" binding="btNuevaF">
+                    <constraints>
+                      <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties>
+                      <background color="-5263439"/>
+                      <text value="Nuevo"/>
+                    </properties>
+                  </component>
+                  <component id="d85e9" class="javax.swing.JButton" binding="btModificarF">
+                    <constraints>
+                      <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties>
+                      <background color="-5263439"/>
+                      <text value="Modificar"/>
+                    </properties>
+                  </component>
+                  <component id="f0748" class="javax.swing.JButton" binding="btBusquedaF">
+                    <constraints>
+                      <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-vert="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-5263439"/>
+                      <text value="Busqueda Avanzada"/>
+                    </properties>
+                  </component>
+                  <component id="26a78" class="javax.swing.JTextField" binding="textDomicilioF">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <grid id="78688" layout-manager="FormLayout">
+                    <rowspec value="center:d:grow"/>
+                    <constraints>
+                      <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties>
+                      <background color="-1842203"/>
+                    </properties>
+                    <border type="none"/>
+                    <children/>
+                  </grid>
+                  <grid id="1a669" layout-manager="FormLayout">
+                    <rowspec value="center:d:grow"/>
+                    <colspec value="fill:max(d;4px):noGrow"/>
+                    <colspec value="left:4dlu:noGrow"/>
+                    <colspec value="fill:d:grow"/>
+                    <colspec value="left:4dlu:noGrow"/>
+                    <colspec value="fill:d:grow"/>
+                    <constraints>
+                      <grid row="12" column="0" row-span="14" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-vert="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="f6f09" binding="tbFFinal">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="90143" class="com.ainochu.gestor_facturas.bean.TableFacturas" binding="tbFacturas">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <component id="21a41" class="javax.swing.JButton" binding="btEliminarF">
+                    <constraints>
+                      <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-vert="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-5263439"/>
+                      <text value="Eliminar"/>
+                    </properties>
+                  </component>
+                  <component id="394c1" class="javax.swing.JButton" binding="btGuardarF">
+                    <constraints>
+                      <grid row="10" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-5263439"/>
+                      <hideActionText value="true"/>
+                      <text value="Guardar"/>
+                    </properties>
+                  </component>
+                  <component id="3adda" class="javax.swing.JLabel" binding="lbTotalFactura">
+                    <constraints>
+                      <grid row="27" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="4b726" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Franklin Gothic Demi Cond" size="18"/>
+                      <text value="Nombre Cliente:"/>
+                    </properties>
+                  </component>
+                  <component id="8790d" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Franklin Gothic Demi Cond" size="18"/>
+                      <text value="Domicilio Factura:"/>
+                    </properties>
+                  </component>
+                  <component id="9e2b5" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Franklin Gothic Demi Cond" size="18"/>
+                      <text value="Fecha Entrega:"/>
+                    </properties>
+                  </component>
+                  <component id="3a75c" class="javax.swing.JButton" binding="btAnadirElemento">
+                    <constraints>
+                      <grid row="12" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties>
+                      <background color="-5263439"/>
+                      <text value="Añadir Elemento"/>
+                    </properties>
+                  </component>
+                  <component id="ed4e1" class="javax.swing.JButton" binding="btEliminarElemento">
+                    <constraints>
+                      <grid row="14" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties>
+                      <background color="-5263439"/>
+                      <text value="Eliminar Elemento"/>
+                    </properties>
+                  </component>
+                  <grid id="b0aff" layout-manager="FormLayout">
+                    <rowspec value="center:d:grow"/>
+                    <colspec value="fill:d:grow"/>
+                    <constraints>
+                      <grid row="12" column="3" row-span="14" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-vert="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="e95ab">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="70da2" class="com.ainochu.gestor_facturas.bean.TableCarrito" binding="tbCarritoProducto">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <component id="a029a" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Franklin Gothic Demi Cond" size="18"/>
+                      <text value="Tabla Clientes:"/>
+                    </properties>
+                  </component>
+                  <component id="250ef" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="11" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Franklin Gothic Demi Cond" size="18"/>
+                      <text value="Articulos Carrito:"/>
+                    </properties>
+                  </component>
+                  <grid id="f8ab5" layout-manager="FormLayout">
+                    <rowspec value="center:d:grow"/>
+                    <colspec value="fill:239px:noGrow"/>
+                    <constraints>
+                      <grid row="2" column="5" row-span="8" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1842203"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <grid id="ea38" binding="JPBusquedaF" layout-manager="FormLayout">
+                        <rowspec value="center:max(d;4px):noGrow"/>
+                        <rowspec value="top:16dlu:noGrow"/>
+                        <rowspec value="center:d:noGrow"/>
+                        <rowspec value="top:4dlu:noGrow"/>
+                        <rowspec value="center:max(d;4px):noGrow"/>
+                        <rowspec value="top:4dlu:noGrow"/>
+                        <rowspec value="center:max(d;4px):noGrow"/>
+                        <rowspec value="top:4dlu:noGrow"/>
+                        <rowspec value="center:max(d;4px):noGrow"/>
+                        <colspec value="fill:86px:grow"/>
+                        <colspec value="left:4dlu:noGrow"/>
+                        <colspec value="fill:126px:noGrow"/>
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                        </constraints>
+                        <properties>
+                          <autoscrolls value="false"/>
+                          <background color="-1842203"/>
+                          <enabled value="true"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="9669" class="javax.swing.JTextField" binding="textBusquedaF">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <forms defaultalign-horz="false"/>
+                            </constraints>
+                            <properties>
+                              <minimumSize width="14" height="29"/>
+                              <preferredSize width="14" height="29"/>
+                            </properties>
+                          </component>
+                          <component id="4906d" class="javax.swing.JLabel" binding="lbIdB">
+                            <constraints>
+                              <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                              <forms/>
+                            </constraints>
+                            <properties>
+                              <text value="Domicilio:"/>
+                            </properties>
+                          </component>
+                          <component id="ccbf4" class="javax.swing.JButton" binding="btBusquedaAF">
+                            <constraints>
+                              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                              <forms defaultalign-horz="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Buscar"/>
+                            </properties>
+                          </component>
+                          <component id="ba5bd" class="javax.swing.JLabel" binding="lbDestinatarioB">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                              <forms/>
+                            </constraints>
+                            <properties>
+                              <text value="Destinatario Factura:"/>
+                            </properties>
+                          </component>
+                          <component id="38719" class="javax.swing.JButton" binding="btLimpiarF">
+                            <constraints>
+                              <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                              <forms/>
+                            </constraints>
+                            <properties>
+                              <text value="Restablecer"/>
+                            </properties>
+                          </component>
+                          <component id="e5216" class="javax.swing.JTextField" binding="textBusquedaFId">
+                            <constraints>
+                              <grid row="6" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <forms defaultalign-horz="false"/>
+                            </constraints>
+                            <properties>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                  <component id="9bd0b" class="com.toedter.calendar.JDateChooser" binding="dateFechaFactura">
+                    <constraints>
+                      <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                  </component>
+                  <component id="ce57f" class="com.ainochu.gestor_facturas.bean.ComboC" binding="cbNombreCliente">
+                    <constraints>
+                      <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="ff297" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Franklin Gothic Demi Cond" size="18"/>
+                      <text value="Fecha Factura:"/>
+                    </properties>
+                  </component>
+                  <component id="9cd3b" class="com.toedter.calendar.JDateChooser" binding="dateFechaActual">
+                    <constraints>
+                      <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                  </component>
+                  <component id="cde36" class="javax.swing.JButton" binding="btModificarElemento">
+                    <constraints>
+                      <grid row="16" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties>
+                      <background color="-5263439"/>
+                      <text value="Modificar Elemento"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>

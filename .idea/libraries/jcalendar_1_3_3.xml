@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="jcalendar-1.3.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Librerias/jcalendar-1.3.3.jar!/" />
+      <root url="jar://$USER_HOME$/Librerias/jgoodies-forms-1.9.0.jar!/" />
+      <root url="jar://$USER_HOME$/Librerias/jgoodies-common-1.8.1.jar!/" />
+      <root url="file://$USER_HOME$/Librerias/Hibernate" />
+      <root url="jar://$USER_HOME$/Librerias/mongo-java-driver-3.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$USER_HOME$/Librerias/Hibernate" recursive="false" />
+  </library>
+</component>
